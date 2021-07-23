@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "769599124905",
+    "project_id": "travelhanium",
+    "storage_bucket": "travelhanium.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769599124905:android:ad10d658482f74a6cdc0b8",
+        "android_client_info": {
+          "package_name": "com.seook.travelapp_hanium"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769599124905-5u4693koqc7vcde1uctklnsfhbetp1od.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7AL-VSTRhd_comVV8vb48FfrG7WvVfOE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769599124905-5u4693koqc7vcde1uctklnsfhbetp1od.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
