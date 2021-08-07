@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main_search.MainSearchActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/backarrow" />
+
+        <EditText
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="5dp"
+            android:hint="어디로 여행가고 싶으세요?"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:src="@drawable/searching" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="#999999"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:text="전체 도시"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_margin="5dp"
+        android:text="일본"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
