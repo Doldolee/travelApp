@@ -2,9 +2,9 @@
     <!-- Base application theme. -->
     <style name="Theme.TravelApp_hanium" parent="Theme.AppCompat.Light">
         <!-- Primary brand color. -->
-        <item name="windowNoTitle">true</item>
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">#2F80ED</item>
+<!--        <item name="windowNoTitle">true</item>-->
+        <item name="colorPrimary">#cad5ff</item>
+        <item name="colorPrimaryVariant">#8dadff</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>

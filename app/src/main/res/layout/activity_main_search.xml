@@ -9,60 +9,62 @@
         android:orientation="vertical"
         tools:context=".main_search.MainSearchActivity">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
 
-            <ImageView
-                android:id="@+id/backBtn"
-                android:layout_width="5dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="10dp"
-                android:layout_weight="1"
-                android:src="@drawable/backarrow" />
+<!--            <ImageView-->
+<!--                android:id="@+id/backBtn"-->
+<!--                android:layout_width="5dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:src="@drawable/backarrow" />-->
 
-            <EditText
-                android:layout_width="300dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="5dp"
-                android:layout_weight="1"
-                android:background="@android:color/transparent"
-                android:hint="어디로 여행가고 싶으세요?" />
+<!--            <EditText-->
+<!--                android:id="@+id/textArea"-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:hint="어디로 여행가고 싶으세요?" />-->
 
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="7dp"
-                android:layout_weight="1"
-                android:src="@drawable/searching" />
-        </LinearLayout>
+<!--            <ImageView-->
+<!--                android:id="@+id/searchBtn"-->
+<!--                android:layout_width="25dp"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:layout_marginTop="7dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:src="@drawable/searching" />-->
+<!--        </LinearLayout>-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:layout_marginTop="10dp"
-            android:background="#999999" />
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0.5dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="#999999" />-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:layout_marginTop="5dp"
-            android:text="전체 도시"
-            android:textSize="25sp"
-            android:textStyle="bold" />
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:text="전체 도시"-->
+<!--            android:textSize="25sp"-->
+<!--            android:textStyle="bold" />-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:text="일본"
-            android:textSize="20sp" />
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:text="일본"-->
+<!--            android:textSize="20sp" />-->
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv"

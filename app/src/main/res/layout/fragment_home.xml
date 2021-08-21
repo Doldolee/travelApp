@@ -111,24 +111,27 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:src="@drawable/italy" />
+                    android:scaleType="fitXY"
+                    android:src="@drawable/tn_italy" />
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:src="@drawable/france" />
+                    android:scaleType="fitXY"
+                    android:src="@drawable/tn_france" />
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:src="@drawable/germany" />
+                    android:scaleType="fitXY"
+                    android:src="@drawable/tn_germany" />
 
             </LinearLayout>
 
@@ -182,24 +185,27 @@
                 <ImageView
 
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:src="@drawable/america" />
+                    android:scaleType="fitXY"
+                    android:src="@drawable/tn_america" />
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:src="@drawable/japan" />
+                    android:scaleType="fitXY"
+                    android:src="@drawable/tn_japan" />
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:src="@drawable/germany" />
+                    android:scaleType="fitXY"
+                    android:src="@drawable/tn_germany" />
 
 
             </LinearLayout>
