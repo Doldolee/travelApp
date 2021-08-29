@@ -112,4 +112,55 @@ class RetrofitManager {
         })
     }
 
+    fun searchProductDetail(searchTerm : String?, completion: (RESPONSE_STATE, ArrayList<ProductModel>)->Unit){
+        val term = searchTerm.let{
+            it
+        }?:""
+
+        val call = iRetrofit?.searchProductDetail(searchTerm = term).let{
+            it
+        }?: return
+
+        call.enqueue(object:retrofit2.Callback<JsonElement>{
+            override fun onResponse(call: Call<JsonElement>, response: Response<JsonElement>) {
+                Log.d(TAG, "RetrofitManager - onResponse() called/ ${response.body()}")
+
+                when(response.code()){
+                    200->{
+                        response.body()?.let{
+
+                            var parsedProductDataArray = ArrayList<ProductModel>()
+                            val body = it.asJsonArray
+                            body.forEach{
+                                val resultItemObject = it.asJsonObject
+                                Log.d(TAG, "RetrofitManager - onResponse() called/ 요기는 detail 프로덕트:  ${resultItemObject}")
+                                val id = resultItemObject.get("id").asInt
+                                val name = resultItemObject.get("name").asString
+                                val picture = resultItemObject.get("picture").asString
+                                val price = resultItemObject.get("price").asInt
+                                val clicked = resultItemObject.get("clicked").asInt
+                                val ProductItem = ProductModel(
+                                    id = id,
+                                    name = name,
+                                    picture = picture,
+                                    price = price,
+                                    clicked = clicked
+                                )
+                                parsedProductDataArray.add(ProductItem)
+                            }
+                            //completion으로 응답값만 받음.
+                            completion(RESPONSE_STATE.OKAY, parsedProductDataArray )
+                        }
+
+                    }
+                }
+            }
+            override fun onFailure(call: Call<JsonElement>, t: Throwable) {
+                Log.d(TAG, "RetrofitManager - onFailure() called / t: $t")
+                completion(RESPONSE_STATE.FAIL, null!!)
+            }
+
+        })
+    }
+
 }

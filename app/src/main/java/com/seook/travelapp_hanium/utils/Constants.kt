@@ -15,4 +15,8 @@ object API{
     const val SEARCH_PRODUCT :String = "productList"
 
     const val SEARCH_CITY :String = "cityList"
+
+    const val SEARCH_PRODUCT_DETAIL :String = "products"
+
+
 }

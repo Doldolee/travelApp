@@ -34,8 +34,7 @@ class MainSearchActivity : AppCompatActivity() {
 
 
         CityApi()
-
-        rvAdapter = SearchRVAdapter(baseContext, items)
+        rvAdapter = SearchRVAdapter(baseContext, displayList)
         val rv :RecyclerView = binding.rv
         rv.adapter = rvAdapter
         rv.layoutManager = LinearLayoutManager(this)
@@ -43,8 +42,7 @@ class MainSearchActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-
-        menuInflater.inflate(R.menu.menu, menu)
+        menuInflater.inflate(R.menu.menu_city, menu)
         val menuItem = menu!!.findItem(R.id.search)
 
         if(menuItem != null){
@@ -56,9 +54,9 @@ class MainSearchActivity : AppCompatActivity() {
                 override fun onQueryTextChange(newText: String?): Boolean {
                     if(newText!!.isNotEmpty()){
                         displayList.clear()
-                        val search = newText.lowercase(Locale.getDefault())
+                        val search = newText.toLowerCase(Locale.getDefault())
                         items.forEach{
-                            if(it.name.lowercase(Locale.getDefault()).contains(search)){
+                            if(it.name.toLowerCase(Locale.getDefault()).contains(search)){
                                 displayList.add(it)
                             }
                         }
@@ -91,6 +89,7 @@ class MainSearchActivity : AppCompatActivity() {
                     for(city in responseDataArrayList){
                         items.add(city)
                     }
+                    displayList.addAll(items)
                     rvAdapter.notifyDataSetChanged()
 
                 }
