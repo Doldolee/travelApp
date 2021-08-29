@@ -6,12 +6,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.seook.travelapp_hanium.R
 import com.seook.travelapp_hanium.databinding.FragmentHomeBinding
-import com.seook.travelapp_hanium.main_search.MainSearchActivity
+import com.seook.travelapp_hanium.travel_destination_search.MainSearchActivity
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

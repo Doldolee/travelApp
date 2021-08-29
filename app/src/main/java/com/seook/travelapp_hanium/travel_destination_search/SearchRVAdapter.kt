@@ -1,20 +1,15 @@
-package com.seook.travelapp_hanium.main_search
+package com.seook.travelapp_hanium.travel_destination_search
 
 import android.content.Context
-import android.content.Intent
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.fragment.app.FragmentManager
-import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.seook.travelapp_hanium.MainActivity
 import com.seook.travelapp_hanium.R
-import com.seook.travelapp_hanium.fragments.SearchFragment
+import com.seook.travelapp_hanium.retrofit.CityModel
 
-class SearchRVAdapter(val context: Context, val items: ArrayList<SearchModel>) :
+class SearchRVAdapter(val context: Context, val items: ArrayList<CityModel>) :
     RecyclerView.Adapter<SearchRVAdapter.Viewholder>() {
 
     private val TAG = SearchRVAdapter::class.java.simpleName
@@ -32,12 +27,11 @@ class SearchRVAdapter(val context: Context, val items: ArrayList<SearchModel>) :
     }
 
     inner class Viewholder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        fun bindItems(item: SearchModel) {
-            Log.d(TAG, "bind함수 실행")
-            Log.d(TAG, item.toString())
+        fun bindItems(item: CityModel) {
             val cityTitle = itemView.findViewById<TextView>(R.id.cityArea)
 
-            cityTitle.text = item.cityTitle
+            cityTitle.text = item.name
+
 
 //            itemView.setOnClickListener {
 //                //이 부분 SearchFragment로 보내고 싶은데 모르겠습니다.

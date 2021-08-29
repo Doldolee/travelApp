@@ -7,16 +7,16 @@
     >
 
     <ImageView
-
         android:id="@+id/imageArea"
         android:layout_margin="10dp"
         android:scaleType="fitXY"
         android:src="@drawable/logo"
         android:layout_width="70dp"
         android:layout_height="50dp"/>
+
     <TextView
         android:id="@+id/cityArea"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:layout_margin="15dp"
         android:text="도시"
         android:layout_width="wrap_content"
